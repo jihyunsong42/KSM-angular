@@ -1,0 +1,9 @@
+<h2>{{chartAvailable}}</h2>
+<div class="loader" *ngIf="chartAvailable == 3">
+    <div class="alert alert-primary" role="alert">
+        Loading the data. Please wait...
+      </div>
+</div>
+<div id="KOSPIcontainer" [hidden]="chartAvailable != 0"></div>
+<div id="KOSDAQcontainer" [hidden]="chartAvailable != 1"></div>
+<div id="KOSPI200container" [hidden]="chartAvailable != 2"></div>
